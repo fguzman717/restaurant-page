@@ -5,3 +5,9 @@ body {
 .dining-area-photo {
   width: 500px;
 }
+
+img.chef-info,
+img.manager-info,
+img.maitre-d-info {
+  width: 300px;
+}

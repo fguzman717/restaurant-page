@@ -1,5 +1,5 @@
 function loadHomepage() {
-  console.log("Homepage is being imported!");
+  console.log("Home page is being imported!");
 
   const content = document.getElementById("content");
   content.innerHTML = "";
