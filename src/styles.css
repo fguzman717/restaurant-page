@@ -6,6 +6,13 @@ body {
   width: 500px;
 }
 
+img.complimentary,
+img.entree,
+img.main-course,
+img.desserts {
+  width: 300px;
+}
+
 img.chef-info,
 img.manager-info,
 img.maitre-d-info {

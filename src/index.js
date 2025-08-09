@@ -6,5 +6,5 @@ import loadContactPage from "./contact.js";
 //loadHomepage();
 
 // These calls need to be under an event listener
-// loadMenuPage();
-loadContactPage();
+loadMenuPage();
+//loadContactPage();
