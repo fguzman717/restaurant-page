@@ -18,21 +18,20 @@ function loadMenuPage() {
   menuHeaderContainer.classList.add("menu-header-container");
   menuContainer.appendChild(menuHeaderContainer);
 
-  const menuHeading = document.createElement("h1");
-  menuHeading.classList.add("menu-header");
-  menuHeading.textContent = "Saveur";
-  menuContainer.appendChild(menuHeading);
-
-  const menuTitle = document.createElement("h3");
+  const menuTitle = document.createElement("h1");
   menuTitle.classList.add("menu-header");
   menuTitle.textContent = "Signature Menu";
-  menuContainer.appendChild(menuTitle);
+  menuHeaderContainer.appendChild(menuTitle);
 
   const menuDescription = document.createElement("p");
-  menuDescription.classList.add("menu-header");
+  menuDescription.classList.add("menu-header-description");
   menuDescription.textContent =
     "An exploration of refined flavors, seasonal ingredients, and timeless French technique.";
-  menuContainer.appendChild(menuDescription);
+  menuHeaderContainer.appendChild(menuDescription);
+
+  const headerSectionDivider = document.createElement("hr");
+  headerSectionDivider.classList.add("section-divider");
+  menuContainer.appendChild(headerSectionDivider);
 
   //************************************************************************ */
 
@@ -41,29 +40,18 @@ function loadMenuPage() {
   complimentaryContainer.classList.add("complimentary-container");
   menuContainer.appendChild(complimentaryContainer);
 
-  const complimentaryTitle = document.createElement("h3");
-  complimentaryTitle.classList.add("complimentary");
+  const complimentaryTitle = document.createElement("h2");
+  complimentaryTitle.classList.add("section-header");
   complimentaryTitle.textContent = "Amuse-Bouche";
   complimentaryContainer.appendChild(complimentaryTitle);
 
-  const complimentaryPhoto = document.createElement("img");
-  complimentaryPhoto.classList.add("complimentary");
-  complimentaryPhoto.src = complimentaryHero;
-  complimentaryPhoto.alt = "Crème de Chou-Fleur";
-  complimentaryContainer.appendChild(complimentaryPhoto);
-
-  const complimentaryDescription = document.createElement("p");
-  complimentaryDescription.classList.add("complimentary");
-  complimentaryDescription.textContent = "A small bite to begin your journey";
-  complimentaryContainer.appendChild(complimentaryDescription);
-
-  const chouFleurTitle = document.createElement("h5");
-  chouFleurTitle.classList.add("complimentary");
+  const chouFleurTitle = document.createElement("h3");
+  chouFleurTitle.classList.add("menu-item-title");
   chouFleurTitle.textContent = "Crème de Chou-Fleur";
   complimentaryContainer.appendChild(chouFleurTitle);
 
   const chouFleurDescription = document.createElement("p");
-  chouFleurDescription.classList.add("complimentary");
+  chouFleurDescription.classList.add("menu-item-description");
   chouFleurDescription.textContent =
     "Cauliflower velouté with white truffle oil and crispy leek threads.";
   complimentaryContainer.appendChild(chouFleurDescription);
@@ -75,46 +63,40 @@ function loadMenuPage() {
   entreeContainer.classList.add("entree-container");
   menuContainer.appendChild(entreeContainer);
 
-  const entreeTitle = document.createElement("h3");
-  entreeTitle.classList.add("entree");
+  const entreeTitle = document.createElement("h2");
+  entreeTitle.classList.add("section-header");
   entreeTitle.textContent = "Entrées (Starters)";
   entreeContainer.appendChild(entreeTitle);
 
-  const entreePhoto = document.createElement("img");
-  entreePhoto.classList.add("entree");
-  entreePhoto.src = entreeHero;
-  entreePhoto.alt = "Tartelette de Chèvre & Miel";
-  entreeContainer.appendChild(entreePhoto);
-
-  const tartelette = document.createElement("h5");
-  tartelette.classList.add("entree");
+  const tartelette = document.createElement("h3");
+  tartelette.classList.add("menu-item-title");
   tartelette.textContent = "Tartelette de Chèvre & Miel";
   entreeContainer.appendChild(tartelette);
 
   const tarteletteDescription = document.createElement("p");
-  tarteletteDescription.classList.add("entree");
+  tarteletteDescription.classList.add("menu-item-description");
   tarteletteDescription.textContent =
     "Warm goat cheese tart with lavender honey, toasted walnuts, and micro arugula.";
   entreeContainer.appendChild(tarteletteDescription);
 
-  const saumon = document.createElement("h5");
-  saumon.classList.add("entree");
+  const saumon = document.createElement("h3");
+  saumon.classList.add("menu-item-title");
   saumon.textContent = "Saumon Fumé Maison";
   entreeContainer.appendChild(saumon);
 
   const saumonDescription = document.createElement("p");
-  saumonDescription.classList.add("entree");
+  saumonDescription.classList.add("menu-item-description");
   saumonDescription.textContent =
     "House-smoked salmon with lemon crème fraîche, dill oil, and fennel pollen.";
   entreeContainer.appendChild(saumonDescription);
 
-  const veloute = document.createElement("h5");
-  veloute.classList.add("entree");
+  const veloute = document.createElement("h3");
+  veloute.classList.add("menu-item-title");
   veloute.textContent = "Velouté de Courge Musquée";
   entreeContainer.appendChild(veloute);
 
   const velouteDescription = document.createElement("p");
-  velouteDescription.classList.add("entree");
+  velouteDescription.classList.add("menu-item-description");
   velouteDescription.textContent =
     "Silky butternut squash soup with cardamom cream and a brown butter pecan crumble.";
   entreeContainer.appendChild(velouteDescription);
@@ -126,78 +108,54 @@ function loadMenuPage() {
   mainCourseContainer.classList.add("main-course-container");
   menuContainer.appendChild(mainCourseContainer);
 
-  const mainCourseTitle = document.createElement("h3");
-  mainCourseTitle.classList.add("main-course");
+  const mainCourseTitle = document.createElement("h2");
+  mainCourseTitle.classList.add("section-header");
   mainCourseTitle.textContent = "Plats Principaux (Main Courses)";
   mainCourseContainer.appendChild(mainCourseTitle);
 
-  const filet = document.createElement("h5");
-  filet.classList.add("main-course");
+  const filet = document.createElement("h3");
+  filet.classList.add("menu-item-title");
   filet.textContent = "Filet de Bœuf au Vin Rouge";
   mainCourseContainer.appendChild(filet);
 
   const filetDescription = document.createElement("p");
-  filetDescription.classList.add("main-course");
+  filetDescription.classList.add("menu-item-description");
   filetDescription.textContent =
     "Prime filet mignon with a deep red wine reduction, caramelized shallots, and pommes fondantes.";
   mainCourseContainer.appendChild(filetDescription);
 
-  const mainCoursePhoto = document.createElement("img");
-  mainCoursePhoto.classList.add("main-course");
-  mainCoursePhoto.src = mainHero;
-  mainCoursePhoto.alt = "Magret de Canard aux Figues";
-  mainCourseContainer.appendChild(mainCoursePhoto);
-
-  const magret = document.createElement("h5");
-  magret.classList.add("main-course");
+  const magret = document.createElement("h3");
+  magret.classList.add("menu-item-title");
   magret.textContent = "Magret de Canard aux Figues";
   mainCourseContainer.appendChild(magret);
 
   const magretDescription = document.createElement("p");
-  magretDescription.classList.add("main-course");
+  magretDescription.classList.add("menu-item-description");
   magretDescription.textContent =
     "Crispy duck breast with black mission fig compote, wild mushroom risotto, and port glaze.";
   mainCourseContainer.appendChild(magretDescription);
 
-  const turbot = document.createElement("h5");
-  turbot.classList.add("main-course");
+  const turbot = document.createElement("h3");
+  turbot.classList.add("menu-item-title");
   turbot.textContent = "Turbot à la Provençale";
   mainCourseContainer.appendChild(turbot);
 
   const turbotDescription = document.createElement("p");
-  turbotDescription.classList.add("main-course");
+  turbotDescription.classList.add("menu-item-description");
   turbotDescription.textContent =
     "Pan-seared turbot with heirloom tomato confit, olive tapenade, and a saffron white wine sauce.";
   mainCourseContainer.appendChild(turbotDescription);
 
-  const ravioles = document.createElement("h5");
-  ravioles.classList.add("main-course");
+  const ravioles = document.createElement("h3");
+  ravioles.classList.add("menu-item-title");
   ravioles.textContent = "Ravioles de Homard";
   mainCourseContainer.appendChild(ravioles);
 
   const raviolesDescription = document.createElement("p");
-  raviolesDescription.classList.add("main-course");
+  raviolesDescription.classList.add("menu-item-description");
   raviolesDescription.textContent =
     "House-made lobster ravioli in a champagne-cream sauce, finished with chive oil and caviar pearls.";
   mainCourseContainer.appendChild(raviolesDescription);
-
-  //************************************************************************ */
-
-  //Cheese Course
-  const fromageContainer = document.createElement("div");
-  fromageContainer.classList.add("fromages-container");
-  menuContainer.appendChild(fromageContainer);
-
-  const fromageTitle = document.createElement("h3");
-  fromageTitle.classList.add("fromage");
-  fromageTitle.textContent = "Fromages (Cheese Course)";
-  fromageContainer.appendChild(fromageTitle);
-
-  const fromageDescription = document.createElement("p");
-  fromageDescription.classList.add("fromage");
-  fromageDescription.textContent =
-    "A rotating selection of artisanal French and European cheeses, served with fig jam and toasted baguette.";
-  fromageContainer.appendChild(fromageDescription);
 
   //************************************************************************ */
 
@@ -206,64 +164,62 @@ function loadMenuPage() {
   dessertsContainer.classList.add("desserts-container");
   menuContainer.appendChild(dessertsContainer);
 
-  const dessertsTitle = document.createElement("h3");
-  dessertsTitle.classList.add("desserts");
+  const dessertsTitle = document.createElement("h2");
+  dessertsTitle.classList.add("section-header");
   dessertsTitle.textContent = "Desserts";
   dessertsContainer.appendChild(dessertsTitle);
 
-  const dessertsPhoto = document.createElement("img");
-  dessertsPhoto.classList.add("desserts");
-  dessertsPhoto.src = dessertsHero;
-  dessertsPhoto.alt = "Fondant au Chocolat Noir";
-  dessertsContainer.appendChild(dessertsPhoto);
-
-  const fondant = document.createElement("h5");
-  fondant.classList.add("desserts");
+  const fondant = document.createElement("h3");
+  fondant.classList.add("menu-item-title");
   fondant.textContent = "Fondant au Chocolat Noir";
   dessertsContainer.appendChild(fondant);
 
   const fondantDescription = document.createElement("p");
-  fondantDescription.classList.add("desserts");
+  fondantDescription.classList.add("menu-item-description");
   fondantDescription.textContent =
     "Molten dark chocolate cake with raspberry coulis and crème fraîche.";
   dessertsContainer.appendChild(fondantDescription);
 
-  const tarte = document.createElement("h5");
-  tarte.classList.add("desserts");
+  const tarte = document.createElement("h3");
+  tarte.classList.add("menu-item-title");
   tarte.textContent = "Tarte au Citron Basilic";
   dessertsContainer.appendChild(tarte);
 
   const tarteDescription = document.createElement("p");
-  tarteDescription.classList.add("desserts");
+  tarteDescription.classList.add("menu-item-description");
   tarteDescription.textContent =
     "Lemon-basil tart with brûléed meringue and a shortbread crust.";
   dessertsContainer.appendChild(tarteDescription);
 
-  const creme = document.createElement("h5");
-  creme.classList.add("desserts");
+  const creme = document.createElement("h3");
+  creme.classList.add("menu-item-title");
   creme.textContent = "Crème Brûlée à la Lavande";
   dessertsContainer.appendChild(creme);
 
   const cremeDescription = document.createElement("p");
-  cremeDescription.classList.add("desserts");
+  cremeDescription.classList.add("menu-item-description");
   cremeDescription.textContent =
     "Classic vanilla custard infused with Provençal lavender, topped with a caramelized sugar crust.";
   dessertsContainer.appendChild(cremeDescription);
 
   //************************************************************************ */
 
+  const footerSectionDivider = document.createElement("hr");
+  footerSectionDivider.classList.add("section-divider");
+  menuContainer.appendChild(footerSectionDivider);
+
   // Wine
   const wineContainer = document.createElement("div");
   wineContainer.classList.add("wine-container");
   menuContainer.appendChild(wineContainer);
 
-  const wineTitle = document.createElement("h3");
-  wineTitle.classList.add("wine");
+  const wineTitle = document.createElement("h2");
+  wineTitle.classList.add("section-header");
   wineTitle.textContent = "Wine Pairings Available Upon Request";
   wineContainer.appendChild(wineTitle);
 
   const wineDescription = document.createElement("p");
-  wineDescription.classList.add("wine");
+  wineDescription.classList.add("section-description");
   wineDescription.textContent =
     "Our sommelier is pleased to recommend wine pairings tailored to your selections.";
   wineContainer.appendChild(wineDescription);
@@ -299,12 +255,4 @@ export default loadMenuPage;
 
 // Avoid too many colors — restraint is luxury.
 
-// 📱 Mobile Optimization
-// Make sure the menu is responsive — it should look just as beautiful on a phone as on desktop. Stack sections vertically and keep photos scaled appropriately.
-
-// ✨ Optional Extras
-// Downloadable PDF version (with branding): Great for press kits or sharing.
-
 // Interactive hover menus (on websites): Hover to show a photo or short backstory.
-
-// Wine Pairing Suggestions under each dish (in small, italicized text).

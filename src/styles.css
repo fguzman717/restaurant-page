@@ -1,16 +1,5 @@
-body {
-  background-color: rebeccapurple;
-}
-
 .dining-area-photo {
   width: 500px;
-}
-
-img.complimentary,
-img.entree,
-img.main-course,
-img.desserts {
-  width: 300px;
 }
 
 img.chef-info,
@@ -18,3 +7,139 @@ img.manager-info,
 img.maitre-d-info {
   width: 300px;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* ************************************************************************* */
+/* Nav Buttons */
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+nav button {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  width: 200px;
+  height: 2rem;
+  background-color: #c6a664;
+  border: 1px solid #c6a664;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 8px;
+}
+
+nav button.active {
+  background-color: #333;
+  color: #f5f5f5;
+  border-radius: 5px;
+}
+/* ************************************************************************* */
+/* Home Page */
+
+/* ************************************************************************* */
+/* Menu Page */
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: #c6a664;
+  margin: 1rem 0;
+}
+
+.menu-header,
+.section-header,
+.menu-item-title {
+  font-family: "Playfair Display", serif;
+}
+
+.menu-header-description,
+.section-description,
+.menu-item-description {
+  font-family: "Lato", sans-serif;
+}
+
+.menu-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.complimentary-container {
+  background-image: url("assets/creme-de-chou-fleur.png");
+}
+
+.entree-container {
+  background-image: url("assets/tartelette-de-chevre-and-miel.png");
+}
+
+.main-course-container {
+  background-image: url("assets/magret-de-canard-aux-figues.png");
+}
+
+.desserts-container {
+  background-image: url("assets/fondant-au-chocolat-noir.png");
+}
+
+.complimentary-container,
+.entree-container,
+.main-course-container,
+.desserts-container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 1rem 1rem 2rem;
+}
+
+.complimentary-container::before,
+.entree-container::before,
+.main-course-container::before,
+.desserts-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section-header,
+.menu-item-title,
+.section-description,
+.menu-item-description {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.section-header {
+  padding: 1rem 2rem;
+}
+
+.wine-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem 2rem;
+}
+
+/* ************************************************************************* */
+/* Contact Page */
+
+/* ************************************************************************* */

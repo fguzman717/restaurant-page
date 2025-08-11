@@ -12,17 +12,22 @@ const pageLoaders = {
 document.addEventListener("DOMContentLoaded", () => {
   const navButtons = document.querySelectorAll("nav button[data-page]");
 
-  navButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const page = button.dataset.page;
+  navButtons.forEach((clickedButton) => {
+    clickedButton.addEventListener("click", () => {
+      const page = clickedButton.dataset.page;
       const loader = pageLoaders[page];
-
-      console.log(pageLoaders.page);
 
       if (loader) {
         loader();
+
+        navButtons.forEach((activeButton) => {
+          activeButton.classList.remove("active");
+        });
+
+        clickedButton.classList.add("active");
       }
     });
   });
   pageLoaders.home();
+  navButtons[0].classList.add("active");
 });
