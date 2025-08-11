@@ -271,21 +271,6 @@ function loadMenuPage() {
 
 export default loadMenuPage;
 
-// 1. Photos – Quality Over Quantity
-// ✅ Select one hero dish per section
-// Choose the most visually stunning and signature item from each course.
-
-// Use professional, high-resolution photos with clean lighting and a minimalist background to match Saveur’s elegant brand.
-
-// Suggested picks:
-// Amuse-Bouche – A delicate shot of the Crème de Chou-Fleur in a tiny porcelain bowl.
-
-// Entrées – The Tartelette de Chèvre & Miel with rich textures and vibrant greens.
-
-// Mains – Either the Magret de Canard aux Figues or Ravioles de Homard – both are colorful and decadent.
-
-// Dessert – The Tarte au Citron Basilic or Fondant au Chocolat Noir for a dramatic, mouth-watering finish.
-
 // 💡 Pro Tip:
 // Use full-width images as section dividers, or feature images in subtle hover effects (e.g., the image appears when you hover over the dish name).
 
