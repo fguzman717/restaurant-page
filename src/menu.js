@@ -40,10 +40,18 @@ function loadMenuPage() {
   complimentaryContainer.classList.add("complimentary-container");
   menuContainer.appendChild(complimentaryContainer);
 
+  const complimentaryTitleContainer = document.createElement("div");
+  complimentaryTitleContainer.classList.add("title-container");
+  complimentaryContainer.appendChild(complimentaryTitleContainer);
+
   const complimentaryTitle = document.createElement("h2");
   complimentaryTitle.classList.add("section-header");
   complimentaryTitle.textContent = "Amuse-Bouche";
-  complimentaryContainer.appendChild(complimentaryTitle);
+  complimentaryTitleContainer.appendChild(complimentaryTitle);
+
+  const complimentaryDivider = document.createElement("hr");
+  complimentaryDivider.classList.add("complimentary-divider");
+  complimentaryTitleContainer.appendChild(complimentaryDivider);
 
   const chouFleurTitle = document.createElement("h3");
   chouFleurTitle.classList.add("menu-item-title");
@@ -63,10 +71,18 @@ function loadMenuPage() {
   entreeContainer.classList.add("entree-container");
   menuContainer.appendChild(entreeContainer);
 
+  const entreeTitleContainer = document.createElement("div");
+  entreeTitleContainer.classList.add("title-container");
+  entreeContainer.appendChild(entreeTitleContainer);
+
   const entreeTitle = document.createElement("h2");
   entreeTitle.classList.add("section-header");
   entreeTitle.textContent = "Entrées (Starters)";
-  entreeContainer.appendChild(entreeTitle);
+  entreeTitleContainer.appendChild(entreeTitle);
+
+  const entreeDivider = document.createElement("hr");
+  entreeDivider.classList.add("entree-divider");
+  entreeTitleContainer.appendChild(entreeDivider);
 
   const tartelette = document.createElement("h3");
   tartelette.classList.add("menu-item-title");
@@ -108,10 +124,18 @@ function loadMenuPage() {
   mainCourseContainer.classList.add("main-course-container");
   menuContainer.appendChild(mainCourseContainer);
 
+  const mainCourseTitleContainer = document.createElement("div");
+  mainCourseTitleContainer.classList.add("title-container");
+  mainCourseContainer.appendChild(mainCourseTitleContainer);
+
   const mainCourseTitle = document.createElement("h2");
   mainCourseTitle.classList.add("section-header");
   mainCourseTitle.textContent = "Plats Principaux (Main Courses)";
-  mainCourseContainer.appendChild(mainCourseTitle);
+  mainCourseTitleContainer.appendChild(mainCourseTitle);
+
+  const mainCourseDivider = document.createElement("hr");
+  mainCourseDivider.classList.add("main-course-divider");
+  mainCourseTitleContainer.appendChild(mainCourseDivider);
 
   const filet = document.createElement("h3");
   filet.classList.add("menu-item-title");
@@ -164,10 +188,18 @@ function loadMenuPage() {
   dessertsContainer.classList.add("desserts-container");
   menuContainer.appendChild(dessertsContainer);
 
+  const dessertsTitleContainer = document.createElement("div");
+  dessertsTitleContainer.classList.add("title-container");
+  dessertsContainer.appendChild(dessertsTitleContainer);
+
   const dessertsTitle = document.createElement("h2");
   dessertsTitle.classList.add("section-header");
   dessertsTitle.textContent = "Desserts";
-  dessertsContainer.appendChild(dessertsTitle);
+  dessertsTitleContainer.appendChild(dessertsTitle);
+
+  const dessertsDivider = document.createElement("hr");
+  dessertsDivider.classList.add("desserts-divider");
+  dessertsTitleContainer.appendChild(dessertsDivider);
 
   const fondant = document.createElement("h3");
   fondant.classList.add("menu-item-title");
@@ -213,10 +245,18 @@ function loadMenuPage() {
   wineContainer.classList.add("wine-container");
   menuContainer.appendChild(wineContainer);
 
+  const wineTitleContainer = document.createElement("div");
+  wineTitleContainer.classList.add("title-container");
+  wineContainer.appendChild(wineTitleContainer);
+
   const wineTitle = document.createElement("h2");
   wineTitle.classList.add("section-header");
   wineTitle.textContent = "Wine Pairings Available Upon Request";
-  wineContainer.appendChild(wineTitle);
+  wineTitleContainer.appendChild(wineTitle);
+
+  const wineDivider = document.createElement("hr");
+  wineDivider.classList.add("wine-divider");
+  wineTitleContainer.appendChild(wineDivider);
 
   const wineDescription = document.createElement("p");
   wineDescription.classList.add("section-description");
@@ -226,33 +266,3 @@ function loadMenuPage() {
 }
 
 export default loadMenuPage;
-
-// 💡 Pro Tip:
-// Use full-width images as section dividers, or feature images in subtle hover effects (e.g., the image appears when you hover over the dish name).
-
-// 🎨 2. Design Tips to Elevate Your Menu Aesthetically
-// 🖋️ Typography
-// Use an elegant serif font for dish names (e.g., Playfair Display, Didot).
-
-// Use a clean sans-serif font for descriptions (e.g., Open Sans, Lato) to keep it readable.
-
-// 🧾 Menu Layout
-// Use ample white space — don’t crowd your text.
-
-// Group items with subtle dividers or section titles in gold, charcoal, or soft cream.
-
-// Emphasize dish names with bold or slightly larger text, and keep descriptions lighter or italicized.
-
-// 🌟 Highlight Signatures or Staff Picks
-// Add small icons or badges (e.g., ✦ Chef's Signature, 🥂 Sommelier’s Pick) to subtly guide attention.
-
-// 🎨 Color Palette
-// Stick to a minimal and refined palette:
-
-// Background: soft cream, matte white, or slate gray.
-
-// Accents: gold, navy, deep burgundy, or forest green.
-
-// Avoid too many colors — restraint is luxury.
-
-// Interactive hover menus (on websites): Hover to show a photo or short backstory.
