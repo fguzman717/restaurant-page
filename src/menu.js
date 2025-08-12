@@ -34,8 +34,8 @@ function loadMenuPage() {
   menuContainer.appendChild(headerSectionDivider);
 
   //************************************************************************ */
-
   //Complimentary dishes
+
   const complimentaryContainer = document.createElement("div");
   complimentaryContainer.classList.add("complimentary-container");
   menuContainer.appendChild(complimentaryContainer);
@@ -65,8 +65,8 @@ function loadMenuPage() {
   complimentaryContainer.appendChild(chouFleurDescription);
 
   //************************************************************************ */
-
   //Entrees
+
   const entreeContainer = document.createElement("div");
   entreeContainer.classList.add("entree-container");
   menuContainer.appendChild(entreeContainer);
@@ -118,8 +118,8 @@ function loadMenuPage() {
   entreeContainer.appendChild(velouteDescription);
 
   //************************************************************************ */
-
   //Main Course Dishes
+
   const mainCourseContainer = document.createElement("div");
   mainCourseContainer.classList.add("main-course-container");
   menuContainer.appendChild(mainCourseContainer);
@@ -182,8 +182,8 @@ function loadMenuPage() {
   mainCourseContainer.appendChild(raviolesDescription);
 
   //************************************************************************ */
-
   // Desserts
+
   const dessertsContainer = document.createElement("div");
   dessertsContainer.classList.add("desserts-container");
   menuContainer.appendChild(dessertsContainer);
@@ -235,12 +235,12 @@ function loadMenuPage() {
   dessertsContainer.appendChild(cremeDescription);
 
   //************************************************************************ */
+  // Wine
 
   const footerSectionDivider = document.createElement("hr");
   footerSectionDivider.classList.add("section-divider");
   menuContainer.appendChild(footerSectionDivider);
 
-  // Wine
   const wineContainer = document.createElement("div");
   wineContainer.classList.add("wine-container");
   menuContainer.appendChild(wineContainer);
